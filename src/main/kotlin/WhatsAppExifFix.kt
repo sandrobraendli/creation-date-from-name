@@ -8,6 +8,6 @@ fun main(args: Array<String>) {
     root.walk().filter {
         it.name.startsWith("WhatsApp Image ")
     }.forEach {
-        println(it)
+        it.copyTo(File("./processed/${it.name}"))
     }
 }
