@@ -1,5 +1,13 @@
 package io.braendli.whatsapp_exif_fix
 
-fun main() {
-    println("Hello World!")
+import java.io.File
+
+fun main(args: Array<String>) {
+    val root = File(if (args.isEmpty()) ".." else args[0])
+
+    root.walk().filter {
+        it.name.startsWith("WhatsApp Image ")
+    }.forEach {
+        println(it)
+    }
 }
