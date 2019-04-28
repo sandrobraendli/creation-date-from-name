@@ -9,7 +9,7 @@ group = "io.braendli"
 version = "1.0-SNAPSHOT"
 
 application {
-    mainClassName = "io.braendli.whatsapp_exif_fix.WhatsAppExifFixKt"
+    mainClassName = "io.braendli.creation_date_from_name.MainKt"
 }
 
 repositories {
